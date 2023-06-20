@@ -1,0 +1,49 @@
+nav{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    max-width: 100%;
+    border-right: 1px solid var(--lighter);
+}
+
+nav>div{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url('../Img/magic.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav>div>img{
+
+    width: 150px;
+    color: white;
+    margin: 0 auto;
+}
+
+nav>ul{
+
+    list-style: none;
+    padding: 0;
+}
+
+nav>ul>li>a{
+
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 20px 50px;
+    margin: 10px 0;
+}
+
+nav>ul>li>a:hover{
+
+    background: linear-gradient(90deg, var(--lighter) 80%, red 200%);
+    border-right: 2px solid red;
+}

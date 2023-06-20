@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+:root{
+
+  --main-background: #060910;
+  --light-background: #0d1015;
+  --lighter: #2b2b2b;
+  --highlight: red; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mains{
+
+  display: grid;
+  grid-template-columns: 20rem auto;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-background);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1, h2, h3, p, span{
+
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(71, 71, 71); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4b4b4b; 
 }
