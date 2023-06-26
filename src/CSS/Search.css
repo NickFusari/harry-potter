@@ -55,9 +55,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(43,43,43);
+    background: linear-gradient(140deg, red 2%, rgb(43,43,43) 20%, rgb(26, 26, 26) 90%);
     width: 90%;
     border-radius: 8px;
+    text-align: center;
+    height: 40rem;
+    position: relative;
 }
 
 .allInContent>h3{
@@ -68,4 +71,25 @@
 .allInImg{
 
     height: 150px;
+}
+
+.addToFav{
+
+    color: white;
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 10px 10px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid red;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.addToFav:hover{
+
+    background: linear-gradient(var(--lighter) 70%, red 150%);
+    border-radius: 3px;
 }

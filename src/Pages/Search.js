@@ -55,6 +55,31 @@ const Search = () => {
                         }
                     </>
                   }
+                  <p>
+                    {
+                      e.species === undefined ?
+                      <>{e.effect === undefined? "Effect: unknown": "Effect: " + e.effect}</>
+                      :
+                      <>{e.house === '' ? "House: unknown" : "House: " + e.house}</>
+                    }
+                  </p>
+                  <p>
+                    {
+                      e.species === undefined ?
+                      <>{e.sideEffects === null ? "Side Effects: unknown" : "Effect: " + e.sideEffects}</>
+                      :
+                      <>{e.ancestry === '' ? "Ancestry: unknown" : "Ancestry: " + e.ancestry}</>
+                    }
+                  </p>
+                  <p>
+                    {
+                      e.species === undefined ?
+                      <>{"Difficulty: " + e.difficulty}</>
+                      :
+                      <>{e.patronus=== '' ? "Patronus: unknown": "Patronus: " + e.patronus}</>
+                    }
+                  </p>
+                  <button className='addToFav'>Add to favourites</button>
                 </div>
               )
             })

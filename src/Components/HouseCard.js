@@ -24,7 +24,7 @@ const HouseCards = ({houseInfo, extraData, characters}) => {
 const SimpleCard = ({houseInfo, extraData, setExpanded}) => {
 
   const shadow = "0px 0px 10px 1px " + extraData[0];
-
+  const borderBottom = "1px solid " + extraData[0];
 
   return (
     <div onClick={setExpanded} style={{boxShadow: shadow}} className='simpleCard'>
@@ -55,8 +55,9 @@ const SimpleCard = ({houseInfo, extraData, setExpanded}) => {
             <h3>Room: </h3>
             <p>{houseInfo.commonRoom}</p>
           </div>
-
-
+          <div className='houseButtonHolder'>
+            <button style={{borderBottom: borderBottom}} className='addToFav2'>Add to favourites</button>
+          </div>
         </div>
     </div>
   )
@@ -65,6 +66,7 @@ const SimpleCard = ({houseInfo, extraData, setExpanded}) => {
 const ExpandedCard = ({houseInfo, extraData, setExpanded, characters}) => {
 
   const shadow = "0px 0px 10px 1px " + extraData[0];
+  const borderBottom = "1px solid " + extraData[0];
 
   return (
     <div className='expand'>
@@ -125,6 +127,7 @@ const ExpandedCard = ({houseInfo, extraData, setExpanded, characters}) => {
               <th>Patronus</th>
               <th>Actor</th>
               <th>Date of Birth</th>
+              <th></th>
             </tr>
             {
               characters.map(c => {
@@ -136,6 +139,7 @@ const ExpandedCard = ({houseInfo, extraData, setExpanded, characters}) => {
                     <td>{c.patronus}</td>
                     <td>{c.actor}</td>
                     <td>{c.dateOfBirth}</td>
+                    <td><button style={{borderBottom: borderBottom}} className='addToFav2'>Add to favourites</button></td>
                   </tr>
                 )
               })
