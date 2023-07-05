@@ -5,7 +5,6 @@ import {extraData} from '../Data.js';
 
 const HouseCards = ({houseInfo, characters}) => {
 
-
   return (
     <div className='cardHolder'>
         <div className='blurAndFade'>

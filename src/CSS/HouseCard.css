@@ -99,6 +99,12 @@
 .textContainer{
 
     padding: 3rem 0;
+    position: relative;
+}
+
+.textContainer>h1{
+
+    display: inline;
 }
 
 .fullData{
@@ -179,31 +185,4 @@ text-align: right;
 .charList{
 
     margin: 3rem 0;
-}
-
-.houseButtonHolder{
-
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.addToFav2{
-
-    color: white;
-    text-decoration: none;
-    letter-spacing: 3px;
-    padding: 10px 10px;
-    border: none;
-    background: none;
-    border-bottom: 1px solid red;
-    margin-bottom: 2rem;
-    cursor: pointer;
-}
-
-.addToFav2:hover{
-
-    background: rgb(32, 32, 32);
-    border-radius: 3px;
 }

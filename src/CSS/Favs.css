@@ -1,0 +1,67 @@
+.favsContainer{
+
+    height: 100vh;
+    width: 100%;
+    background: url('../Img/secondaryBackdrop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fadedFavs{
+
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    background: linear-gradient(60deg, var(--main-background) 30%, rgba(0, 0, 0, 0) 70%);
+    overflow: auto;
+    padding: 3rem;
+}
+
+.fadedFavs>h1{
+
+    margin-bottom: 2rem;
+}
+
+.favHouses, .favPeople, .favPotions{
+
+    height: 35vh;
+    border: 1px solid rgb(75, 75, 75);
+    border-radius: 13px;
+    margin: 0 auto 3rem;
+    overflow: auto;
+    background: rgb(39, 39, 39);
+}
+
+.favHouses{
+
+    width: 80%;
+}
+
+.favPeople{
+
+    width: 100%;
+    margin-right: 1rem;
+}
+
+.favPotions{
+
+    width: 98%;
+    margin-left: 1rem;
+}
+
+.favHouses>h2, .favPeople>h2, .favPotions>h2{
+
+    background: rgb(75, 75, 75);
+    padding: 1rem 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.favPeopleAndPotions{
+
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
+}

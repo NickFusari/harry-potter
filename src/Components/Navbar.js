@@ -22,9 +22,6 @@ const Navbar = () => {
             <li>
                 <Link to="/search">Search</Link>
             </li>
-            <li>
-                <Link to="/favs">Favourites</Link>
-            </li>
         </ul>
     </nav>
   )
