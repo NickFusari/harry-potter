@@ -93,3 +93,16 @@
     background: linear-gradient(var(--lighter) 70%, red 150%);
     border-radius: 3px;
 }
+
+@media(max-width: 1240px){
+
+    .seachContainer, .fadedBackground{
+
+        height: 89vh;
+    }
+
+    .conentContainer{
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -20,3 +20,11 @@
     background: linear-gradient(60deg, var(--main-background) 30%, rgba(0, 0, 0, 0) 70%);
     overflow: auto;
 }
+
+@media(max-width: 1240px){
+
+    .cardHolder, .blurAndFade{
+
+        height: 89vh;
+    }
+}

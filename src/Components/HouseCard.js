@@ -122,7 +122,6 @@ const ExpandedCard = ({houseInfo, extraData, setExpanded, characters}) => {
               <th>Patronus</th>
               <th>Actor</th>
               <th>Date of Birth</th>
-              <th></th>
             </tr>
             {
               characters.map(c => {

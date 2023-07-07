@@ -49,3 +49,11 @@ h1, h2, h3, p, span{
 ::-webkit-scrollbar-thumb:hover {
   background: #4b4b4b; 
 }
+
+@media(max-width: 1240px){
+
+  .mains{
+
+    display: block;
+  }
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../CSS/Houses.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import HouseCards from '../Components/HouseCards';
