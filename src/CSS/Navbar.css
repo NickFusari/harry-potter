@@ -57,18 +57,22 @@ nav>ul>li>a:hover{
 
     nav{
 
+        position: fixed;
+        z-index: 15;
+        top: 0;
+        left: 0;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        height: 11vh;
-
+        width: 100%;
+        background: var(--main-background);
     }
 
     nav>div{
 
-        width: 20%;
+        width: 10rem;
+        height: 7rem;
         padding: 2rem;
-        z-index: 11;
     }
 
     nav>div>img{

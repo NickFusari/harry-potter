@@ -98,7 +98,13 @@
 
     .seachContainer, .fadedBackground{
 
-        height: 89vh;
+        height: 100vh;
+        padding-top: 5vh;
+    }
+
+    .fadedBackground>div{
+
+        text-align: center;
     }
 
     .conentContainer{

@@ -55,10 +55,6 @@
 
 @media(max-width: 1240px){
 
-    .homeHero, .fadedHero{
-
-        height: 89vh;
-    }
 
     .title>h2{
 

@@ -44,8 +44,8 @@
 
 @media(max-width: 1240px){
 
-    .historyContainer, .fadedBack, .innerContent{
+    .fadedBack{
 
-        height: 89vh;
+        padding-top: 15vh;
     }
 }

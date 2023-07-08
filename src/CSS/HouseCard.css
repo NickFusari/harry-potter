@@ -186,3 +186,11 @@ text-align: right;
 
     margin: 3rem 0;
 }
+
+@media(max-width: 1240px){
+
+    .simpleCard{
+
+        margin-bottom: 5rem;
+    }
+}
