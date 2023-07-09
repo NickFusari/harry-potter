@@ -70,6 +70,9 @@ const ExpandedCard = ({houseInfo, extraData, setExpanded, characters}) => {
           <div className="imgContainer">
             <img src={extraData[2]} alt="House Banner" />
           </div>
+          <div>
+            <h1 className='alternativeTitle'>{houseInfo.name}</h1>
+          </div>
           <div className="textContainer">
             <h1>{houseInfo.name}</h1>
             <div className="fullData">
