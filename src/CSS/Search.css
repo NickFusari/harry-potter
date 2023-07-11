@@ -73,27 +73,6 @@
     height: 150px;
 }
 
-.addToFav{
-
-    color: white;
-    position: absolute;
-    bottom: 0;
-    text-decoration: none;
-    letter-spacing: 3px;
-    padding: 10px 10px;
-    border: none;
-    background: none;
-    border-bottom: 1px solid red;
-    margin-bottom: 2rem;
-    cursor: pointer;
-}
-
-.addToFav:hover{
-
-    background: linear-gradient(var(--lighter) 70%, red 150%);
-    border-radius: 3px;
-}
-
 @media(max-width: 1240px){
 
     .seachContainer, .fadedBackground{
@@ -110,5 +89,26 @@
     .conentContainer{
 
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px){
+
+    .fadedBackground>div>input{
+        
+        width: 90%;
+        margin: 4rem 0 2rem 0;
+        padding: 5px 10px;
+    }
+
+    .conentContainer{
+
+        grid-template-columns: 1fr;
+        padding: 0 0 0 1rem;
+    }
+
+    .allInContent{
+
+        width: 90%;
     }
 }

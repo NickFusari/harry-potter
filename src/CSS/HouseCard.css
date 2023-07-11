@@ -260,3 +260,48 @@ text-align: right;
         top: 32%;
     }
 }
+
+@media(max-width: 600px){
+
+    .buttonHolder{
+
+        top: 0;
+        right: 0;
+    }
+
+    .imgContainer{
+
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin: 2rem auto 0;
+    }
+
+    .imgContainer>img{
+
+        width: 50%;
+        width: 110%;
+        transform: translate(-6%, -16%);
+    }
+
+    .alternativeTitle{
+
+        display: none;
+    }
+
+    .textContainer{
+
+        padding: 0;
+    }
+
+    .charTable{
+
+        overflow: auto;
+    }
+
+    .wrapper{
+
+        max-width: 100%;
+        overflow-x: scroll;
+    }
+}

@@ -28,14 +28,14 @@
 
     font-size: 3rem;
     letter-spacing: 3px;
-    max-width: 50%;
+    width: 50%;
 }
 
 .description>p{
 
     font-size: 1.5rem;
     letter-spacing: 3px;
-    max-width: 60%;
+    width: 60%;
 }
 
 .button>a{
@@ -70,5 +70,43 @@
     .description>p{
 
         font-size: 1rem;
+    }
+}
+
+@media(max-width: 600px){
+
+    .title{
+
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+    .title>h2{
+
+        font-size: 1rem;
+
+    }
+
+    .title>h1{
+
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .description>p{
+
+        font-size: 0.8rem;
+    }
+
+    .button>a{
+
+        font-size: 0.6rem;
+        letter-spacing: 2px;
+        padding: 5px 5px;
+    }
+
+    .description>p{
+
+        width: 100%;
     }
 }

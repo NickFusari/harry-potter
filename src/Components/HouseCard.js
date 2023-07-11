@@ -118,29 +118,31 @@ const ExpandedCard = ({houseInfo, extraData, setExpanded, characters}) => {
         </div>
         <div className="bottomContainer">
           <h2 className='charList'>Members of the House:</h2>
-          <table className='charTable'>
-            <tr style={{backgroundColor: extraData[0]}} className='charRow'>
-              <th>Image</th>
-              <th>Name</th>
-              <th>Patronus</th>
-              <th>Actor</th>
-              <th>Date of Birth</th>
-            </tr>
-            {
-              characters.map(c => {
+          <div className="wrapper">
+            <table className='charTable'>
+              <tr style={{backgroundColor: extraData[0]}} className='charRow'>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Patronus</th>
+                <th>Actor</th>
+                <th>Date of Birth</th>
+              </tr>
+              {
+                characters.map(c => {
 
-                return (
-                  <tr className='charRow'>
-                    <td><img src={c.image === "" ? PlaceHolder:c.image} alt="character" className='charImage'/></td>
-                    <td>{c.name}</td>
-                    <td>{c.patronus}</td>
-                    <td>{c.actor}</td>
-                    <td>{c.dateOfBirth}</td>
-                  </tr>
-                )
-              })
-            }
-          </table>
+                  return (
+                    <tr className='charRow'>
+                      <td><img src={c.image === "" ? PlaceHolder:c.image} alt="character" className='charImage'/></td>
+                      <td>{c.name}</td>
+                      <td>{c.patronus}</td>
+                      <td>{c.actor}</td>
+                      <td>{c.dateOfBirth}</td>
+                    </tr>
+                  )
+                })
+              }
+            </table>
+          </div>
         </div>
       </div>
     </div>

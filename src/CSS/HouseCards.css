@@ -31,3 +31,13 @@
         padding-top: 15vh;
     }
 }
+
+@media(max-width: 600px){
+
+    .blurAndFade{
+
+        margin-top: 2rem;
+        grid-template-columns: 1fr;
+        padding-top: 15vh;
+    }
+}

@@ -79,7 +79,6 @@ const Search = () => {
                       <>{e.patronus=== '' ? "Patronus: unknown": "Patronus: " + e.patronus}</>
                     }
                   </p>
-                  <button className='addToFav'>Add to favourites</button>
                 </div>
               )
             })
